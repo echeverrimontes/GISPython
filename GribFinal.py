@@ -19,7 +19,6 @@ proj = ds.GetProjection()
 
 print( data )
 
-'''
 xres = gt[1]
 yres = gt[5]
 
@@ -51,7 +50,7 @@ df = pd.DataFrame( list( zip( x.flatten(), y.flatten(), data.flatten() ) ), colu
 writer = pd.ExcelWriter( "C:\Users\Paula\Desktop\Felipe\WindLatLong.xlsx" )
 df.to_excel( writer, "Sheet1", index = False )
 writer.save()
-'''
+
 '''
 
 # Mercator
