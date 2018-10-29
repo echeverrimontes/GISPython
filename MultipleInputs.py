@@ -62,7 +62,7 @@ class Data:
         return x, y, data;
 
 # Wind grib2 file.
-linkOne = 'C:\Users\Paula\Downloads\pgbf2018102406.01.2018102406.grb2'
+linkOne = "C:\Users\Paula\Downloads\pgbf2018102406.01.2018102406.grb2"
 dataOne = Data( linkOne )
 wind = dataOne.data
 # Latitude and Longitude.
@@ -70,7 +70,7 @@ xWind = dataOne.x
 yWind = dataOne.y
 
 # Temperature grib2 file.
-linkTwo = 'C:\Users\Paula\Downloads\enspost.t00z.prcp_24hbc (3).grib2'
+linkTwo = "C:\Users\Paula\Downloads\enspost.t00z.prcp_24hbc (3).grib2"
 dataTwo = Data( linkTwo )
 temp = dataTwo.data
 # Latitude and Longitude.
@@ -78,12 +78,20 @@ xTemp = dataTwo.x
 yTemp = dataTwo.y
 
 # Precipitation grib2 file.
-linkThree = 'C:\Users\Paula\Downloads\ge10pt.t12z.pgrb2a.0p50_bcf003'
+linkThree = "C:\Users\Paula\Downloads\ge10pt.t12z.pgrb2a.0p50_bcf003"
 dataThree = Data( linkThree )
 prec = dataThree.data
 # Latitude and Longitude.
 xPrec = dataThree.x
 yPrec = dataThree.y
+
+# Ice grib2 file.
+linkFour = "C:\Users\Paula\Downloads\seaice.t00z.grb.grib2"
+dataFour = Data( linkFour )
+ice = dataFour.data
+# Latitude and Longitude.
+xPrec = dataFour.x
+yPrec = dataFour.y
 
 '''
 # This helps to troubleshoot problems with the opening of grib2 files.
@@ -110,8 +118,8 @@ yOzon = dataFour.y
 '''
 
 # Make the data available for Pandas'.
-df = pd.DataFrame( list( zip( xWind.flatten(), yWind.flatten(), wind.flatten(), temp.flatten(), prec.flatten() ) ), \
-columns = ["Latitude", "Longitude", "Wind", "Temperature", "Precipitation"] )
+df = pd.DataFrame( list( zip( xWind.flatten(), yWind.flatten(), wind.flatten(), temp.flatten(), prec.flatten(), ice.flatten() ) ), \
+columns = ["Latitude", "Longitude", "Wind", "Temperature", "Precipitation", "Ice"] )
 
 # Write the data to Excel xlsl file.
 writer = pd.ExcelWriter( "C:\Users\Paula\Desktop\Felipe\IceLatLong.xlsx" )
