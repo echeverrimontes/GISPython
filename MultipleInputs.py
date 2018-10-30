@@ -55,7 +55,7 @@ class Data:
         xx = np.arange( xmin, xmax + xres, xres )
         yy = np.arange( ymax + yres, ymin, yres )
 
-        data, xx = shiftgrid( 180.0, data, xx, start = False )
+        #data, xx = shiftgrid( 180.0, data, xx, start = False )
 
         x, y = np.meshgrid( xx, yy )
 
@@ -90,8 +90,8 @@ linkFour = "C:\Users\Paula\Downloads\seaice.t00z.grb.grib2"
 dataFour = Data( linkFour )
 ice = dataFour.data
 # Latitude and Longitude.
-xPrec = dataFour.x
-yPrec = dataFour.y
+xIce = dataFour.x
+yIce = dataFour.y
 
 '''
 # This helps to troubleshoot problems with the opening of grib2 files.
@@ -118,12 +118,33 @@ yOzon = dataFour.y
 '''
 
 # Make the data available for Pandas'.
-df = pd.DataFrame( list( zip( xWind.flatten(), yWind.flatten(), wind.flatten(), temp.flatten(), prec.flatten(), ice.flatten() ) ), \
-columns = ["Latitude", "Longitude", "Wind", "Temperature", "Precipitation", "Ice"] )
+# Wind.
+dfWind = pd.DataFrame( list( zip( xWind.flatten(), yWind.flatten(), wind.flatten() ) ), \
+columns = ["WindLatitude", "WindLongitude", "Wind"] )
+
+# Temperature.
+dfTemp = pd.DataFrame( list( zip( xTemp.flatten(), yTemp.flatten(), temp.flatten() ) ), \
+columns = ["TempLatitude", "TempLongitude", "Temperature"] )     
+
+# Precipitation.
+dfPrec = pd.DataFrame( list( zip( xPrec.flatten(), yPrec.flatten(), prec.flatten() ) ), \
+columns = ["PrecLatitude", "PrecLongitude", "Precipitation"] )
+
+# Ice.
+dfIce = pd.DataFrame( list( zip( xIce.flatten(), yIce.flatten(), ice.flatten() ) ), \
+columns = ["IceLatitude", "IceLongitude", "Ice"] )
 
 # Write the data to Excel xlsl file.
 writer = pd.ExcelWriter( "C:\Users\Paula\Desktop\Felipe\IceLatLong.xlsx" )
-df.to_excel( writer, "Sheet1", index = False )
+
+# Write each DataFrame to a different sheet.
+dfWind.to_excel( writer, "Sheet1", index = False )
+dfTemp.to_excel( writer, "Sheet2", index = False )
+dfPrec.to_excel( writer, "Sheet3", index = False )
+dfIce.to_excel( writer, "Sheet4", index = False )
+
+# Close and output to Excel.
+
 writer.save()
 
 '''
