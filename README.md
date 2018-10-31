@@ -2,7 +2,7 @@
 We open our grib2 file with the ReadExcel component from TTToolbox.
 There are 3 columns per WorkSheet, the xlsx file is created from a Python 2.7 
 script that opens the grib2 file and saves
-the values stored according to their coordinates (MultipleInputs.py).
+the values stored according to their coordinates (MultipleInputs.py). The data comes from http://nomads.ncep.noaa.gov/
 ![docsone](https://user-images.githubusercontent.com/21000020/47823284-8fc72b80-dd35-11e8-93c5-5b6b6cf7c807.JPG)
 We reproject our points into three
 different famous projections:
