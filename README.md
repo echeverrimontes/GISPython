@@ -28,8 +28,16 @@ translate our points in the z vector to get
 what is called in computer graphics
 Heightmap.
 ![docsthree](https://user-images.githubusercontent.com/21000020/47823280-8fc72b80-dd35-11e8-9dd6-1973d7c5bec9.JPG)
+In the same fashion, we want to get some
+sort of cross-relationship between data.
+So we move our points according to the
+top rainy places in the world. We do so
+by picking the peak of the rain data and 
+assigning those points to a Spin-Force 
+component from the class of
+Vector-Fields.
+![docsfour](https://user-images.githubusercontent.com/21000020/47823283-8fc72b80-dd35-11e8-8d11-91cd00f51b58.JPG)
 We can do a similar process with our
 Spherical Projection.
-![docsfour](https://user-images.githubusercontent.com/21000020/47823283-8fc72b80-dd35-11e8-8d11-91cd00f51b58.JPG)
 ![docsfive](https://user-images.githubusercontent.com/21000020/47823282-8fc72b80-dd35-11e8-9f58-8869d03876b5.JPG)
 
