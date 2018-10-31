@@ -20,7 +20,16 @@ results for values bigger than
 85 degrees of longitude. Latitude on the
 other hand is not a problem.
 ![docstwo](https://user-images.githubusercontent.com/21000020/47823281-8fc72b80-dd35-11e8-8500-e6c6e40ef32d.JPG)
+Now that we have our geographical
+coordinates projected to the cartesian
+plane, we want to emphasize the data 
+that each place contains, therefore we 
+translate our points in the z vector to get
+what is called in computer graphics
+Heightmap.
 ![docsthree](https://user-images.githubusercontent.com/21000020/47823280-8fc72b80-dd35-11e8-9dd6-1973d7c5bec9.JPG)
+We can do a similar process with our
+Spherical Projection.
 ![docsfour](https://user-images.githubusercontent.com/21000020/47823283-8fc72b80-dd35-11e8-8d11-91cd00f51b58.JPG)
 ![docsfive](https://user-images.githubusercontent.com/21000020/47823282-8fc72b80-dd35-11e8-9f58-8869d03876b5.JPG)
 
