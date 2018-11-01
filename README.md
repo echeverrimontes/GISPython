@@ -1,6 +1,6 @@
 # GISPython
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
-# the definition is at (Workshop (1).gh  --On this repo)
+# The definition is int this repo, its name is: Workshop (1).gh
 # **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
 # https://www.food4rhino.com/app/tt-toolbox
 # https://www.food4rhino.com/app/tarsier
