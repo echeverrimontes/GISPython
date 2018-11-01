@@ -4,13 +4,19 @@ To get the data from the site we just navigate to the data set we want, for exam
 # Installing the libraries that we will use in our python script
 # Windows:
 1.) Download python 2.7 from https://www.python.org/download/releases/2.7/ select the MSI installer according to your system 64 or 32 bits.
+
 2.) Press windows key and r, type: cmd, press enter, type: pip -V if it shows you the version of pip installed for example in my case it prints 
 "pip 18.1 from c:\...." you can continue to step 4.) otherwise go to 3.)
+
 3.) Go to https://pip.pypa.io/en/stable/installing/ right mouse click on the get-pip.py link and save it in your system. Then windows + r, cmd, enter,
 and type python get-pip.py.
+
 4.) Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal and search for the GDAL wheel: GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl download it. Once it is in your computer type something like: pip install C:\Users\admin\donwloads\GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl (look where the file is located).
+
 5.) Repeat step 4 but this time download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl, install through pip as step 4 showed.
+
 6.) Now open the command-line again and type pip install openpyxl 
+
 You should be ready to run the python scripts. 
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
 # The definition is in this repo, its name is: Workshop (1).gh
