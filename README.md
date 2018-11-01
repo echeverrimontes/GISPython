@@ -1,4 +1,6 @@
 # GISPython
+# Obtaining the data from the NCEP, link: http://nomads.ncep.noaa.gov/
+To get the data from the site we just navigate to the data set we want, for example GDAS, we click on the grib filter link, this sends us to a subdirectory where we can choose the grib2 file (https://en.wikipedia.org/wiki/GRIB) from a period of time, after you clicked on the time period you are interested in, you will find some checkboxes that you can leave unclicked for the whole data or you can cherry pick what you want. After you downloaded the file... for some reason the NCEP gives some wickedly named files in some of the data sets, to check if its wicked or not just look at the ending of the file you just downloaded, if it doesn't end in .grb2, you will have to rename your file with the name you want but making sure that it ends in .grb2 file. 
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
 # The definition is in this repo, its name is: Workshop (1).gh
 # **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
