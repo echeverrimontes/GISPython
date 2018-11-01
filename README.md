@@ -17,6 +17,55 @@ and type python get-pip.py.
 
 6.) Now open the command-line again and type pip install openpyxl 
 
+# Mac
+1.) Download and install python 2.7.
+
+2.) Go to terminal, you can do so by pressing at the same time the Command and Space keys, than type terminal.
+
+3.) Go to http://www.kyngchaos.com/software/frameworks/ and download and install the GDAL 1.11 version.
+
+4.) Now open the file explorer and press the Command, Shift and G key at the same time, this should enable you to search a directory. Type /Library/Frameworks/GDAL.framework/Versions/1.11/Python/2.7/site-packages and press enter. We need these files to be on our python site-packages folders. So copy all the files and folders.
+
+5.) Repeat the Command, Shift and G press to go to another directory, this time is our python's directory which is at: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ once you are inside the directory paste all the files you have already copied from step 4.).
+
+6.) Check if we have succesfully installed the library: go to Terminal and type: python than press enter, now type: import gdal if there are no errors we can continue with step 7.).
+
+7.) Install homebrew:
+Here is a detailed guide on how to install homebrew: http://osxdaily.com/2018/03/07/how-install-homebrew-mac-os/
+
+8.) Go to Terminal and type: 
+brew install matplotlib
+brew install numpy
+brew install geos
+brew install proj
+
+9.) Download the basemap tar: https://sourceforge.net/projects/matplotlib/files/matplotlib-toolkits/
+
+10.) Untar the file.
+
+11.) Go to the file explorer and repeat our favourite new combo of Command, Shift and G, than type /usr/local/Cellar/ 
+Now search for the geos folder, once you are in you should see a version folder something like 3.7.0 in my case
+Right click on the folder and press alt at the same time now you should be able to do: Copy "name of your folder" as Pathname click that one.
+
+11.) Type on the Terminal: touch ~/.bash_profile; open ~/.bash_profile
+Now add to the recently opened file: export GEOS_DIR="paste here your path name" 
+so it should look something like: 
+export GEOS_DIR=/usr/local/Cellar/geos/3.7.0/
+Save the file and close it.
+
+12.) Go to Terminal and type: source ~/.bash_profile
+
+13.) In Terminal type: cd "the path of your untared basemap directory" 
+in my case it looks like this: 
+cd /Users/FelipeGutierrez/Downloads/basemap-1.0.7
+You can get the path by going to where you untared the downloaded version of basemap right clicking on the folder and press alt at the same time now you should be able to do: Copy "name of your folder" as Pathname click that one.
+
+9.) When you are in the directory type: python setup.py install
+
+10.) Check your basemap install: Go to Terminal and type: python
+Than type: import mpl_toolkits.basemap as bm
+If it doesnt show any error you are good to go.
+
 You should be ready to run the python scripts. 
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
 # The definition is in this repo, its name is: Workshop (1).gh
