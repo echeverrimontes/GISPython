@@ -1,4 +1,9 @@
 # GISPython
+# Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
+# the definition is at (Workshop (1).gh  --On this repo)
+# **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
+# https://www.food4rhino.com/app/tt-toolbox
+# https://www.food4rhino.com/app/tarsier
 We open our grib2 file with the ReadExcel component from TTToolbox.
 There are 3 columns per WorkSheet, the xlsx file is created from a Python 2.7 
 script that opens the grib2 file and saves
