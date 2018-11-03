@@ -84,10 +84,9 @@ Although I used python 2.7, this process should be easily extended to newer pyth
 # **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
 # https://www.food4rhino.com/app/tt-toolbox
 # https://www.food4rhino.com/app/tarsier
-We open our grib2 file with the ReadExcel component from TTToolbox. For the sake of organization I have multiple instances of the ReadExcel component, each one opens a different spread sheet from the same Excel file. We could instead modify the python script to extract the data into different columns of the same spread sheet for performance gains as we would only have one instance of the component but as I said it would lead to messy index lookups in comparison to our nice 0 for latitude, 1 for longitude and 2 for data.
-There are 3 columns per WorkSheet, the xlsx file is created from a Python 2.7 
-script that opens the grib2 file and saves
-the values stored according to their coordinates (MultipleInputs.py). The data comes from http://nomads.ncep.noaa.gov/
+We open our grib2 file with the ReadExcel component from TTToolbox. For the sake of organization I have multiple instances of the ReadExcel component, each one opens a different work sheet from the same Excel file. We could instead modify the python script to extract the data into different columns of the same work sheet for performance gains as we would only have one instance of the component but as I said it would lead to messy index lookups in comparison to our nice 0 for latitude, 1 for longitude and 2 for data.
+The xlsx file is created from a Python 2.7 script that opens the grib2 file and saves
+the values stored according to their coordinates. The python file is in this repo as MultipleInputs.py you should be able to mod it with not much hassle for your particular needs.
 ![docsone](https://user-images.githubusercontent.com/21000020/47823284-8fc72b80-dd35-11e8-93c5-5b6b6cf7c807.JPG)
 We reproject our points into three
 different famous projections:
@@ -104,6 +103,7 @@ results for values bigger than
 -85 degrees and smaller than 
 85 degrees of longitude. Latitude on the
 other hand is not a problem.
+Note that we could do the projections in our python script to speed up the Grasshopper definition but for the sake of keeping everything in the scope of a more versed in Grasshopper scripting audience we are not going to. If you are still curious on how to implement this via python, the Basemap library that we use for our map creatiom provides some out of the box projections in our MultipleInputs.py file from line 151 to 162. If we wanted our data to be written to a xlsl, translating the projections nodes Cassini, WebMercator and Spherical from the Workshop (1).gh from C# to python shouldnt be that hard but we'll leave that as an excersice for the more coding savy readers.
 ![docstwo](https://user-images.githubusercontent.com/21000020/47823281-8fc72b80-dd35-11e8-8500-e6c6e40ef32d.JPG)
 Now that we have our geographical
 coordinates projected to the cartesian
