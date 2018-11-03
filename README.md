@@ -133,4 +133,4 @@ We can do a similar process with our
 Spherical Projection.
 In this image we are moving our points radially according to the values of the data, afterwards we create a PointCloud using Tarsier and assign the colours of our remapped data after they have passed through a gradient component.
 ![docsfive](https://user-images.githubusercontent.com/21000020/47823282-8fc72b80-dd35-11e8-9f58-8869d03876b5.JPG)
-
+Now that we have our framework working the possibilities are endless as we are only bound by our creativity!
