@@ -35,10 +35,14 @@ and type python get-pip.py.
 7.) Install homebrew:
 Here is a detailed guide on how to install homebrew: http://osxdaily.com/2018/03/07/how-install-homebrew-mac-os/
 
-8.) Go to Terminal and type: 
+8.) Go to Terminal and type:
+
 brew install matplotlib
+
 brew install numpy
+
 brew install geos
+.
 brew install proj
 
 9.) Download the basemap tar: https://sourceforge.net/projects/matplotlib/files/matplotlib-toolkits/
