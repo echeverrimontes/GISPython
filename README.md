@@ -42,7 +42,7 @@ brew install matplotlib
 brew install numpy
 
 brew install geos
-.
+
 brew install proj
 
 9.) Download the basemap tar: https://sourceforge.net/projects/matplotlib/files/matplotlib-toolkits/
