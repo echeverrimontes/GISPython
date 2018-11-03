@@ -60,11 +60,13 @@ in my case it looks like this:
 cd /Users/FelipeGutierrez/Downloads/basemap-1.0.7
 You can get the path by going to where you untared the downloaded version of basemap right clicking on the folder and press alt at the same time now you should be able to do: Copy "name of your folder" as Pathname click that one.
 
-9.) When you are in the directory type: python setup.py install
+14.) When you are in the directory type: python setup.py install
 
-10.) Check your basemap install: Go to Terminal and type: python
+15.) Check your basemap install: Go to Terminal and type: python
 Than type: import mpl_toolkits.basemap as bm
 If it doesnt show any error you are good to go.
+
+16.) Download through Terminal: pip install openpyxl 
 
 You should be ready to run the python scripts. 
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
