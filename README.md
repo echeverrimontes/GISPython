@@ -84,7 +84,7 @@ Although I used python 2.7, this process should be easily extended to newer pyth
 # **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
 # https://www.food4rhino.com/app/tt-toolbox
 # https://www.food4rhino.com/app/tarsier
-We open our grib2 file with the ReadExcel component from TTToolbox.
+We open our grib2 file with the ReadExcel component from TTToolbox. For the sake of organization I have multiple instances of the ReadExcel component, each one opens a different spread sheet from the same Excel file. We could instead modify the python script to extract the data into different columns of the same spread sheet for performance gains as we would only have one instance of the component but as I said it would lead to messy index lookups in comparison to our nice 0 for latitude, 1 for longitude and 2 for data.
 There are 3 columns per WorkSheet, the xlsx file is created from a Python 2.7 
 script that opens the grib2 file and saves
 the values stored according to their coordinates (MultipleInputs.py). The data comes from http://nomads.ncep.noaa.gov/
