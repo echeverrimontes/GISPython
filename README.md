@@ -79,6 +79,8 @@ The Basemap library is used for viz from python, if you are only interested in e
 
 Although I used python 2.7, this process should be easily extended to newer python versions, but I haven't personally tried it.
 
+If you want to visualize the data from python uncomment line 58 from MultipleInputs.py and uncomment the end of the file from lines 150 to 172. You should also comment the lines that do the transfer to xlsl those go from 136 to 149.
+
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
 # The definition is in this repo, its name is: Workshop (1).gh
 # **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
