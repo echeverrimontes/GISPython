@@ -15,7 +15,9 @@ and type python get-pip.py.
 
 5.) Repeat step 4 but this time download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl, install through pip as step 4 showed.
 
-6.) Now open the command-line again and type pip install openpyxl 
+6.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
+
+7.) Now open the command-line again and type: pip install openpyxl 
 
 # Mac
 1.) Download and install python 2.7.
@@ -66,9 +68,15 @@ You can get the path by going to where you untared the downloaded version of bas
 Than type: import mpl_toolkits.basemap as bm
 If it doesnt show any error you are good to go.
 
-16.) Download through Terminal: pip install openpyxl 
+16.) Download Pandas, we need this to format and translate our data to Excel. Go to Terminal: pip install pandas
 
-You should be ready to run the python scripts. 
+17.) Download openpyxl, Pandas needs this to be able to write to xlsl, do it through Terminal: pip install openpyxl 
+
+You should be ready to run the python scripts.
+
+# Note
+The Basemap library is used for viz from python, if you are only interested in extracting the data to Excel than you might not need it.
+
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
 # The definition is in this repo, its name is: Workshop (1).gh
 # **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
