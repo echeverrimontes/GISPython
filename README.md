@@ -118,7 +118,7 @@ plane, we want to emphasize the data
 that each place contains, therefore we 
 translate our points in the z vector to get
 what is called in computer graphics
-Heightmap.
+a Heightmap.
 ![docsthree](https://user-images.githubusercontent.com/21000020/47823280-8fc72b80-dd35-11e8-9dd6-1973d7c5bec9.JPG)
 In the same fashion, we want to get some
 sort of cross-relationship between data.
