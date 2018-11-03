@@ -77,6 +77,8 @@ You should be ready to run the python scripts.
 # Note
 The Basemap library is used for viz from python, if you are only interested in extracting the data to Excel than you might not need it.
 
+Although I used python 2.7, this process should be easily extended to newer python versions, but I haven't personally tried it.
+
 # Data Manipulation and Viz using Rhinoceros and its famous Grasshopper plugin. 
 # The definition is in this repo, its name is: Workshop (1).gh
 # **Note: You must have installed the plugins TTToolbox and Tarsier, you can grab them respectively from: 
