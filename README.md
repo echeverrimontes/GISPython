@@ -3,13 +3,17 @@
 To get the data from the site we just navigate to the data set we want, by simply scrolling down until you can see the data sets, for example GDAS, we click on the grib filter link, this sends us to a subdirectory where we can choose the grib2 file (https://en.wikipedia.org/wiki/GRIB) from a period of time, after you clicked on the time period you are interested in, you will find some checkboxes that you can leave unclicked for the whole data or you can cherry pick what you want (you have to be careful with what you choose as the page says "The selections below represent common choices which may or may not be relevant to the files that you have selected. For example choosing RH (relative humidity) would be pointless in file of sea-surface temperatures. In addition, not all possibilities are allowed. For example, suppose you only want the virtual temperature at the tropopause at 01Z. In this case you'd have to transfer the entire file.", if you are not entirely sure about the pointlessness of the selection, just leave all the checkboxes as they are), when you are done with the checkboxes stage, you scroll until you see the start download button, you click on "Start Download". After you downloaded the file... for some reason the NCEP gives some wickedly named files in some of the data sets, to check if its wicked or not just look at the ending of the file you just downloaded, if it doesn't end in .grb2, you will have to rename your file with the name you want but making sure that it ends in .grb2 file. 
 # Installing the libraries that we will use in our python script
 # Windows:
-1.) Download python 2.7.9 (older versions dont come with pip installed and it is a pain to install yourself so just go for >=2.7.9) from  https://www.python.org/downloads/release/python-279/ select the MSI installer according to your system 64 or 32 bits. You probably have a X64 machine but you may not, if you have a 32X choose the: Windows x86 MSI installer if you have a 64X machine choose the: Windows x86-64 MSI installer
+1.) Download python 2.7.9 (older versions dont come with pip installed and it is a pain to install yourself so just go for >=2.7.9) from  https://www.python.org/downloads/release/python-279/ select the MSI installer according to your system 64 or 32 bits. You probably have a X64 machine but you may not, if you have a 32X choose the: Windows x86 MSI installer if you have a 64X machine choose the: Windows x86-64 MSI installer.
 
-2.) When you have downloades and installed python, press windows key and r, type: cmd, press enter, type: pip -V then type enter, if it shows you the version of pip installed for example in my case it prints 
+2.) When you have downloaded and installed python, press windows key and r, type: cmd, press enter, type: pip -V then type enter, if it shows you the version of pip installed for example in my case it prints 
 "pip 18.1 from c:\...." you can continue to step 4.) otherwise go to 3.)
+Note that when installing python you should change this checkbox:
+![pythonnopath](https://user-images.githubusercontent.com/21000020/47969175-93162c00-e041-11e8-88c8-28c046b769c1.PNG)
+to:
+![pythonpath](https://user-images.githubusercontent.com/21000020/47969173-927d9580-e041-11e8-956e-e7dc51b7855c.PNG)
 
 3.) Go to https://pip.pypa.io/en/stable/installing/ right mouse click on the get-pip.py link and save it in your system. Then windows + r, cmd, enter,
-and type python get-pip.py.
+and type: python get-pip.py
 
 4.) Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal and search for the GDAL wheel: GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl download it (note that this the wheel that I need as I am running a 64 bits system and python 2.7, if you have a different configuration you should download the wheel that matches your machine and python version). Once it is in your computer type something like: pip install C:\Users\admin\donwloads\GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl (look where the file is located).
 
