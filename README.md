@@ -41,7 +41,27 @@ To check if you have correctly installed it, type windows key and r, then type: 
 
 pip install matplotlib
 
-7.) Repeat step 5 but this time download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl note (this is the version I need as I am running python 2.7 and a 64 bit computer, you may have different settings), install through pip as step 5 showed. A recap would be:
+7.) Go to:
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
+
+Search for pyproj on the page:
+
+for my setup is: pyproj‑1.9.5.1‑cp27‑cp27m‑win_amd64.whl for yours it may be another one.
+
+Type windows key and r, then type: cmd, enter.
+
+From the command line type: pip install "the location of your file"
+
+in my case it is something like: 
+
+pip install C:\Users\admin\donwloads\pyproj‑1.9.5.1‑cp27‑cp27m‑win_amd64.whl
+
+8.) Go to:
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
+
+download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl note (this is the version I need as I am running python 2.7 and a 64 bit computer, you may have different settings), install through pip as step 5 showed. A recap would be:
 
 Get the path to the downloaded file.
 
@@ -53,9 +73,9 @@ in my case it would be something like:
 
 pip install C:\Users\admin\donwloads\basemap-1.2.0-cp27-cp27m-win_amd64.whl (look where the file is located).
 
-8.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
+9.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
 
-9.) Now from the command-line type: pip install openpyxl 
+10.) Now from the command-line type: pip install openpyxl 
 
 # Mac
 1.) Download and install python 2.7.
