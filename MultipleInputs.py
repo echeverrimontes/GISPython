@@ -51,15 +51,19 @@ class Data:
 
         ds = None
 
+        # Create the latitudes and longitudes according to our minimum and maximum values,
+        # also according to the step or resolution of the grid
         xx = np.arange( xmin, xmax + xres, xres )
         yy = np.arange( ymax + yres, ymin, yres )
-
+        
+        # If you are plotting the data directly from python, uncomment the following line.
         #data, xx = shiftgrid( 180.0, data, xx, start = False )
 
         x, y = np.meshgrid( xx, yy )
 
         return x, y, data;
 
+# Note that the links change to the location in your own computer where you store the grib2 files.
 # Wind grib2 file.
 linkOne = "C:\Users\Paula\Downloads\pgbf2018102406.01.2018102406.grb2"
 dataOne = Data( linkOne )
