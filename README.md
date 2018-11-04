@@ -6,7 +6,7 @@ To get the data from the site we just navigate to the data set we want, by simpl
 1.) Download python 2.7 from https://www.python.org/download/releases/2.7/ select the MSI installer according to your system 64 or 32 bits. You probably have a X64 machine but you may not, if you have a 32X choose the: Windows x86 MSI Installer (2.7.0) (sig)
 installer if you have a 64X machine choose the: Windows X86-64 MSI Installer (2.7.0) [1] (sig)
 
-2.) When you have downloades and installed python, press windows key and r, type: cmd, press enter, type: pip -V if it shows you the version of pip installed for example in my case it prints 
+2.) When you have downloades and installed python, press windows key and r, type: cmd, press enter, type: pip -V then type enter, if it shows you the version of pip installed for example in my case it prints 
 "pip 18.1 from c:\...." you can continue to step 4.) otherwise go to 3.)
 
 3.) Go to https://pip.pypa.io/en/stable/installing/ right mouse click on the get-pip.py link and save it in your system. Then windows + r, cmd, enter,
