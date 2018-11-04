@@ -37,7 +37,7 @@ pip install C:\Users\admin\donwloads\GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl
 
 To check if you have correctly installed it, type windows key and r, then type: python, enter, once in the python shell, type: import gdal, enter, if you have no mistakes you have correctly installed GDAL.
 
-6.) Now we need to install matplotlib, we can do so by going to the console (windows key and r, then enter) and type:
+6.) Now we need to install matplotlib, we can do so by going to the console (windows key and r, type cmd and then press enter) and type:
 
 pip install matplotlib
 
