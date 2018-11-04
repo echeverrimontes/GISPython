@@ -19,7 +19,9 @@ to:
 3.) Go to https://pip.pypa.io/en/stable/installing/ right mouse click on the get-pip.py link and save it in your system. Then windows + r, cmd, enter,
 and type: python get-pip.py
 
-4.) Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal and search for the GDAL wheel: GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl download it (note that this the wheel that I need as I am running a 64 bits system and python 2.7, if you have a different configuration you should download the wheel that matches your machine and python version). 
+4.) Go to: http://www.gisinternals.com/query.html?content=filelist&file=release-1911-x64-gdal-2-2-3-mapserver-7-0-7.zip and download the gdal-202-1911-x64-core.msi file, now install it with the "typical" settings. Once installed.
+
+5.) Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal and search for the GDAL wheel: GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl download it (note that this the wheel that I need as I am running a 64 bits system and python 2.7, if you have a different configuration you should download the wheel that matches your machine and python version). 
 
 Copy the path to the file you just donwloaded, you can do this by opening where the file is located, right-clicking it and copying the location from properties, then you add a backslash and the name of the file, so you end up with something like:
 
@@ -33,11 +35,13 @@ in my case it looks something like:
 
 pip install C:\Users\admin\donwloads\GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl (look where the file is located).
 
-5.) Repeat step 4 but this time download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl, install through pip as step 4 showed.
+To check if you have correctly installed it, type windows key and r, then type: python, enter, once in the python shell, type: import gdal, enter, if you have no mistakes you have correctly installed GDAL.
 
-6.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
+6.) Repeat step 4 but this time download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl, install through pip as step 4 showed.
 
-7.) Now open the command-line again and type: pip install openpyxl 
+7.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
+
+8.) Now open the command-line again and type: pip install openpyxl 
 
 # Mac
 1.) Download and install python 2.7.
