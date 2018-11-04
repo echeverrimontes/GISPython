@@ -37,11 +37,19 @@ pip install C:\Users\admin\donwloads\GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl
 
 To check if you have correctly installed it, type windows key and r, then type: python, enter, once in the python shell, type: import gdal, enter, if you have no mistakes you have correctly installed GDAL.
 
-6.) Repeat step 4 but this time download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl, install through pip as step 4 showed.
+6.) Now we need to install matplotlib, we can do so by going to the console (windows key and r, then enter) and type:
 
-7.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
+pip install matplotlib
 
-8.) Now open the command-line again and type: pip install openpyxl 
+Do the same for numpy:
+
+pip install numpy
+
+7.) Repeat step 5 but this time download the Basemap wheel: basemap‑1.2.0‑cp27‑cp27m‑win_amd64.whl, install through pip as step 4 showed.
+
+8.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
+
+9.) Now open the command-line again and type: pip install openpyxl 
 
 # Mac
 1.) Download and install python 2.7.
