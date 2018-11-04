@@ -57,6 +57,11 @@ in my case it is something like:
 
 pip install C:\Users\admin\donwloads\pyproj‑1.9.5.1‑cp27‑cp27m‑win_amd64.whl
 
+To check if it is correctly installed go to the cmd.exe as previously mentioned (type windows key and r, then type: cmd, enter).
+Once in the cmd.exe type: python
+Once in the python shell, type: import pyproj
+No errors should appear.
+
 8.) Go to:
 
 https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
@@ -73,9 +78,24 @@ in my case it would be something like:
 
 pip install C:\Users\admin\donwloads\basemap-1.2.0-cp27-cp27m-win_amd64.whl (look where the file is located).
 
+To check if it is correctly installed go to the cmd.exe as previously mentioned (type windows key and r, then type: cmd, enter).
+Once in the cmd.exe type: python
+Once in the python shell, type: from mpl_toolkits.basemap import Basemap
+No errors should appear.
+
 9.) Download Pandas, we need this to format and translate our data to Excel. Go to cmd.exe: pip install pandas
 
+To check if it is correctly installed go to the cmd.exe as previously mentioned (type windows key and r, then type: cmd, enter).
+Once in the cmd.exe type: python
+Once in the python shell, type: import pandas as pd
+No errors should appear.
+
 10.) Now from the command-line type: pip install openpyxl 
+
+To check if it is correctly installed go to the cmd.exe as previously mentioned (type windows key and r, then type: cmd, enter).
+Once in the cmd.exe type: python
+Once in the python shell, type: import openpyxl
+No errors should appear.
 
 # Mac
 1.) Download and install python 2.7.
