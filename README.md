@@ -19,9 +19,15 @@ to:
 3.) Go to https://pip.pypa.io/en/stable/installing/ right mouse click on the get-pip.py link and save it in your system. Then windows + r, cmd, enter,
 and type: python get-pip.py
 
-4.) Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal and search for the GDAL wheel: GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl download it (note that this the wheel that I need as I am running a 64 bits system and python 2.7, if you have a different configuration you should download the wheel that matches your machine and python version). Once it is in your computer type windows key plus r, than cmd, enter and type:
+4.) Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal and search for the GDAL wheel: GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl download it (note that this the wheel that I need as I am running a 64 bits system and python 2.7, if you have a different configuration you should download the wheel that matches your machine and python version). 
 
-pip install "the path to the wheel you just downloaded" 
+Copy the path to the file you just donwloaded, you can do this by opening where the file is located, right-clicking it and copying the location from properties, then you add a backslash and the name of the file, so you end up with something like:
+
+C:\Users\admin\donwloads\GDAL‑2.2.4‑cp27‑cp27m‑win_amd64.whl
+
+Once you have the path, type windows key plus r, than cmd, enter and type:
+
+pip install "your path to the wheel you have downloaded"
 
 in my case it looks something like:
 
