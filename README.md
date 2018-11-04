@@ -9,7 +9,9 @@ To get the data from the site we just navigate to the data set we want, by simpl
 "pip 18.1 from c:\...." you can continue to step 4.) otherwise go to 3.)
 Note that when installing python you should change this checkbox:
 ![pythonnopath](https://user-images.githubusercontent.com/21000020/47969175-93162c00-e041-11e8-88c8-28c046b769c1.PNG)
+
 to:
+
 ![pythonpath](https://user-images.githubusercontent.com/21000020/47969173-927d9580-e041-11e8-956e-e7dc51b7855c.PNG)
 
 3.) Go to https://pip.pypa.io/en/stable/installing/ right mouse click on the get-pip.py link and save it in your system. Then windows + r, cmd, enter,
