@@ -1,6 +1,5 @@
 from mpl_toolkits.basemap import Basemap, shiftgrid, addcyclic
 import gdal
-import netCDF4
 import matplotlib.pyplot as plt
 import numpy as np
 #np.set_printoptions( threshold = np.nan )
