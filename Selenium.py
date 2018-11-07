@@ -49,25 +49,20 @@ for i in driver.find_elements( By.XPATH, "/html/body/table[2]/tbody/tr/td[2]/cen
 clicks[0].click()
 listClicks = driver.find_elements_by_tag_name( 'a' )
 
-handles = None
+#handles = None
 
 for i in range( 0, len( listClicks ) ):
 
-    #handles = driver.window_handles[i]
-
-    print( listClicks[i].get_attribute( "href" ) )
-    #driver.get( listClicks[i] )
-    #  execute_script( "window.open('" + link.get_attribute( "href" ) + "');" )
-
-'''
-for link in listClicks:
+    driver.execute_script( "window.open('" + listClicks[i].get_attribute( "href" ) + "');" )
     
-    driver.execute_script( "window.open('" + link.get_attribute( "href" ) + "');" )
-    #time.sleep( 5 )
-    #links = driver.find_elements( By.XPATH, "/html/body/form/p[10]/input[1]" )
-    #links[0].click()
-    #time.sleep( 20 )
-    #driver.implicitly_wait( 20 )
-    #download = driver.find_element_by_tag_name( "Start download" )
-    #download.click()
-'''
+for handle in driver.window_handles:
+    
+    driver.switch_to.window( handle )
+    links = driver.find_elements( By.XPATH, "/html/body/form/p[10]/input[1]" )
+    
+    if len( links ) > 0:
+        
+        #print( links )
+        
+        links[0].click()
+
