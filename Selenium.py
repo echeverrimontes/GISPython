@@ -1,4 +1,3 @@
-# -*- coding: cp1252 -*-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -16,7 +15,7 @@ def downloadWait( path ):
     seconds = 0
     wait = True
     
-    while wait and seconds < 120:
+    while wait and seconds < 5000:
         
         time.sleep(1)
         wait = False
@@ -81,7 +80,7 @@ listClicks = driver.find_elements_by_tag_name( 'a' )
 numberOfClicks = len( listClicks )
 fileOriginal = ''
 fileRenames = [None] * numberOfClicks
-iterCounter = 0
+boolean = False
 
 for i in range( 0, numberOfClicks ):
 
@@ -95,21 +94,34 @@ for handle in driver.window_handles:
     
     driver.switch_to.window( handle )
     links = driver.find_elements( By.XPATH, "/html/body/form/p[10]/input[1]" )
+
+    boolean = downloadWait( path )
     
-    if len( links ) > 0:
+    if len( links ) > 0 and boolean == False:
         
         links[0].click()
         #print( links )
 
         fileOriginal = ( driver.find_element( By.XPATH, "/html/body/form/p[2]/select/option" ) )
         fileOriginal = ( fileOriginal.text.strip().split( ' ' )[0] )
-        boolean = downloadWait( path )
 
-        if boolean == False:
-        
-            listOfFiles = glob.glob( path + "\\*" )
-            latestFile = max( listOfFiles, key = os.path.getctime )
+time.sleep( 3 )
 
-            os.rename( latestFile, path + "\\" + fileRenames[iterCounter] + ".grb2" )
+if boolean == False:
 
-            iterCounter += 1
+    listOfFiles = glob.glob( path + "\\*" )
+    listOfFiles.sort( key = os.path.getctime )
+
+    for i in range( 0, numberOfClicks ):
+
+        os.rename( listOfFiles[i], path + "\\" + fileRenames[i] + ".grb2" )
+
+            
+'''        
+listOfFiles = glob.glob( path + "\\*" )
+latestFile = max( listOfFiles, key = os.path.getctime )
+
+os.rename( latestFile, path + "\\" + fileRenames[iterCounter] + ".grb2" )
+
+iterCounter += 1
+'''
