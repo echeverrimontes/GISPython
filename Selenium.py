@@ -49,7 +49,7 @@ searchFor = raw_input( "Enter the specific data set you want to download: " )
 chromeOptions = webdriver.ChromeOptions()
 prefs = { "download.default_directory" : path }
 chromeOptions.add_experimental_option( "prefs", prefs )
-chromedriver = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\chromedriver.exe"
+chromedriver = raw_input( "Define the path to the chrome driver: " )
 
 driver = webdriver.Chrome( executable_path = chromedriver, chrome_options = chromeOptions )
 
@@ -105,7 +105,7 @@ for handle in driver.window_handles:
         fileOriginal = ( driver.find_element( By.XPATH, "/html/body/form/p[2]/select/option" ) )
         fileOriginal = ( fileOriginal.text.strip().split( ' ' )[0] )
 
-time.sleep( 3 )
+time.sleep( 6 )
 
 if boolean == False:
 
