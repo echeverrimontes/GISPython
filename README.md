@@ -22,10 +22,20 @@ To use it you must have installed Selenium, if you already have pip, you only go
 
 pip install selenium
 
-It asks for a path to a folder that already exists or if it doesn't, it creates it, it also asks for the data-set you want to retrieve, for example:
+Download the Selenium Chrome Driver from: https://chromedriver.storage.googleapis.com/index.html?path=2.43/
 
-GFS 0.25 Degree
+Inputs:
 
+It asks for a path to a folder that already exists or if it doesn't, it creates it.
+
+It also asks for the data-set you want to retrieve, for example:
+
+    GFS 0.25 Degree
+    GFS 0.25 Degree Hourly
+    GDAS 0.25
+    
+And the final user-input is the path to the Chrome Driver you just downloaded.
+    
 It is useful as it renames the files with their dates and can automate a tedious process of downloading one by one each of the files.
 
 # Obtaining the data from the NCEP, link: http://nomads.ncep.noaa.gov/
