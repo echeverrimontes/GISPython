@@ -18,7 +18,7 @@ I made a script that gets all the data from a specific data set:
 
 It is in this repository as Selenium.py: https://github.com/felipunky/GISPython/blob/master/Selenium.py
 
-To use it you must have installed Selenium, if you already have pip, you only go to Terminal or the Command-Prompt and type: 
+To use it you must have installed python 2.7.9, and the Selenium library, through pip, you only go to Terminal or the Command-Prompt and type: 
 
 pip install selenium
 
