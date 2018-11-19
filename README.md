@@ -196,7 +196,10 @@ If it doesnt show any error you are good to go.
 You should be ready to run the python scripts.
 
 # Note
-The Basemap library is used for viz from python, if you are only interested in extracting the data to Excel than you might not need it.
+The Basemap library is used for viz from python:
+![wind](https://user-images.githubusercontent.com/21000020/48723119-cc2ece80-ebf3-11e8-94cf-cf51a9d4c8c8.png)
+
+if you are only interested in extracting the data to Excel than you might not need it.
 
 Although I used python 2.7, this process should be easily extended to newer python versions, but I haven't personally tried it.
 
